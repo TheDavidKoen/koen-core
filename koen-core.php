@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Koen Core
- * Plugin URI:        https://github.com/davidkoen/koen-core
+ * Plugin URI:        https://github.com/TheDavidKoen/koen-core
  * Description:       Portfolio content types, fields, and admin experience. Theme-independent by design.
  * Version:           0.1.0
  * Requires at least: 6.4

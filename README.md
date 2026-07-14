@@ -17,3 +17,15 @@ any theme change. The koen theme handles presentation only.
 composer install
 composer lint   # PHPCS (WordPress Coding Standards)
 ```
+
+## Git workflow
+
+`main` is protected — every change lands via a pull request with green CI,
+squash-merged so history stays one clean commit per change.
+
+1. Branch off the latest `main`, named after the change type:
+   `git checkout -b feat/my-change` (`feat/`, `fix/`, `chore/`, `docs/`)
+2. Commit using [Conventional Commits](https://www.conventionalcommits.org/)
+3. Push and open a PR: `git push -u origin feat/my-change`, then `gh pr create --fill`
+4. Wait for CI — PHPCS must pass
+5. Squash-merge: `gh pr merge --squash` (the remote branch is deleted automatically)
