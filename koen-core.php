@@ -17,10 +17,12 @@ defined( 'ABSPATH' ) || exit;
 
 define( 'KOEN_CORE_VERSION', '0.1.0' );
 define( 'KOEN_CORE_DIR', plugin_dir_path( __FILE__ ) );
+define( 'KOEN_CORE_URL', plugin_dir_url( __FILE__ ) );
 
 require KOEN_CORE_DIR . 'includes/post-types.php';
 require KOEN_CORE_DIR . 'includes/meta.php';
 require KOEN_CORE_DIR . 'includes/admin-columns.php';
+require KOEN_CORE_DIR . 'includes/skills.php';
 
 /**
  * Register content types and flush permalinks on activation.
