@@ -14,14 +14,6 @@ defined( 'ABSPATH' ) || exit;
  */
 function koen_core_project_fields(): array {
 	return array(
-		'_koen_project_role'     => array(
-			'label' => __( 'My Role', 'koen-core' ),
-			'type'  => 'text',
-		),
-		'_koen_project_year'     => array(
-			'label' => __( 'Year', 'koen-core' ),
-			'type'  => 'text',
-		),
 		'_koen_project_stack'    => array(
 			'label' => __( 'Tech Stack (comma-separated)', 'koen-core' ),
 			'type'  => 'text',
